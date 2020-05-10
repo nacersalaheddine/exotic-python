@@ -1,4 +1,4 @@
-# exotic-python :black_heart:
+# exotic-python 3.x `:black_heart:`
 
 ## Table of Contents
 
@@ -7,7 +7,7 @@
 
 
 ### Python Dictionary Comprehension
-[:arrow_up: TOP :arrow_up:](#table-of-contents)
+`[:arrow_up: TOP :arrow_up:](#table-of-contents)`
 > Dictionary comprehension is an elegant and concise way to create dictionaries.
 ```python
 dictionary = {x:x*x  for x in range(10) if x % 2 == 0}
