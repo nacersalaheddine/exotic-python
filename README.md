@@ -19,7 +19,7 @@ people_iq_dict = {'Salah eddine Nacer': 140, 'Mostafa Maryo': 100, 'Albert Einst
 people_low_iq_dict = {person:iq for (person,iq) in people_iq_dict.items() if iq < 100}
 # >>{'Donald Trump': 20}
 
-#Example 3
+#Example
 dictionary = {x:x*x  for x in range(10) if x % 2 == 0}
 
 #Equivalent code 
