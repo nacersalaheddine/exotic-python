@@ -10,12 +10,22 @@
 [:arrow_up: TOP :arrow_up:](#table-of-contents) :link:
 > Dictionary comprehension is an elegant and concise way to create dictionaries.
 ```python
+#Example 1
+dictionary = {x:x*x  for x in range(10)}
+# >> {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+
+#Example 2, People IQ dictionary
+people_iq_dict = {'Salah eddine Nacer': 140, 'Mostafa Maryo': 100, 'Albert Einstein': 160, 'Donald Trump': 20}
+people_low_iq_dict = {person:iq for (person,iq) in people_iq_dict.items() if iq < 100}
+# >>{'Donald Trump': 20}
+
+#Example 3, Pair numbers dictionary
 dictionary = {x:x*x  for x in range(10) if x % 2 == 0}
 
 #Equivalent code 
 dictionary = {}
 for x in range(10):
- if(x %2 == 0):
+ if(x % 2 == 0):
   dictionary[x] = x*x
 ```
 
