@@ -6,7 +6,8 @@
 
 
 
-### Python Dictionary Comprehension [TOP](#python--dictionary--comprehension)
+### Python Dictionary Comprehension
+[:arrow_up:TOP](#python--dictionary--comprehension)
 > Dictionary comprehension is an elegant and concise way to create dictionaries.
 ```python
 dictionary = {x:x*x  for x in range(10) if x % 2 == 0}
