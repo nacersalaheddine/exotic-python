@@ -1,11 +1,12 @@
-# exotic-python
+# exotic-python :black_heart:
 
 
-## Python Dictionary Comprehension
+## Python Dictionary Comprehension 
+> Dictionary comprehension is an elegant and concise way to create dictionaries.
 ```python
 dictionary = {x:x*x  for x in range(10) if x % 2 == 0}
 
-# Equivalent  code 
+#Equivalent code 
 dictionary = {}
 for x in range(10):
  if(x %2 == 0):
