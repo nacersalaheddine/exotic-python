@@ -4,7 +4,7 @@
 - [Python Printing Techniques](#python-printing-techniques)
 - [Python assertions](#python-assertions)
 - [Python 3-Pilars Functions [map/filter/reduce]](#python-printing-techniques)
-- [Python Anonymous/Lambda Functions](#Python-anonymous/lambda-functions)
+- [Python Anonymous/Lambda Functions](#python-anonymouslambda-functions)
 - [Python Dictionary Comprehension](#python-dictionary-comprehension)
 
 ### Python Anonymous/Lambda Functions
@@ -64,7 +64,7 @@ existing_fruits(fruits_basket,lambda itm:itm)
 > Dictionary comprehension is an elegant and concise way to create dictionaries.
 #### Syntax
 ```python
-lambda arguments : expression
+{key: value for vars in iterable}
 ```
 #### Examples (❛ ᴗ❛)
 ```python
