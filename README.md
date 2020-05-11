@@ -1,9 +1,18 @@
 # exotic-python 3.x :black_heart:
 
 ## Table of Contents
-
+- [Python Anonymous/Lambda Functions](#python-dictionary-comprehension)
 - [Python Dictionary Comprehension](#python-dictionary-comprehension)
 
+### Python Anonymous/Lambda Functions
+[:arrow_up: TOP :arrow_up:](#table-of-contents) :link:
+> ~Lambda~ functions in python are functions that are defined withought a name.
+> ~Lambda~ functions are also called ~anonymous~ functions.
+> Regular functions are defined using the *def* keyword lambda functions are defined using the *lambda* keyword
+```python
+
+
+```
 
 
 ### Python Dictionary Comprehension
