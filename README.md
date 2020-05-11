@@ -9,15 +9,19 @@
 > *Lambda* functions in python are functions that are defined withought a name.
 > *Lambda* functions are also called ~anonymous~ functions.
 > Regular functions are defined using the `def` keyword lambda functions are defined using the `lambda` keyword
+> *Lambda* functions can have any number of arguments,but can only have one expression.
 ```python
-
-
+lambda arguments : expression
 ```
-
+#### Examples (Λ_λ)
+```python
+lambda arguments : expression
+```
 
 ### Python Dictionary Comprehension
 [:arrow_up: TOP :arrow_up:](#table-of-contents) :link:
 > Dictionary comprehension is an elegant and concise way to create dictionaries.
+#### Examples (❛ ᴗ❛)
 ```python
 #Example 1
 dictionary = {x:x*x  for x in range(10)}
