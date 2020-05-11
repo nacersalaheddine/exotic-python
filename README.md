@@ -1,7 +1,10 @@
 # exotic-python 3.x :black_heart:
 
 ## Table of Contents
-- [Python Anonymous/Lambda Functions](#python-dictionary-comprehension)
+- [Python Printing Techniques](#python-printing-techniques)
+- [Python assertions](#python-assertions)
+- [Python 3-Pilars Functions [map/filter/reduce]](#python-printing-techniques)
+- [Python Anonymous/Lambda Functions](#Python-anonymous/lambda-functions)
 - [Python Dictionary Comprehension](#python-dictionary-comprehension)
 
 ### Python Anonymous/Lambda Functions
@@ -10,17 +13,59 @@
 > *Lambda* functions are also called ~anonymous~ functions.
 > Regular functions are defined using the `def` keyword lambda functions are defined using the `lambda` keyword
 > *Lambda* functions can have any number of arguments,but can only have one expression.
+#### Syntax
 ```python
 lambda arguments : expression
 ```
 #### Examples (Λ_λ)
 ```python
-lambda arguments : expression
+#Example 1
+
+power = lambda number,p : number**p
+print(power(10,2))
+# >> 100
+
+#Example 2
+from datetime import date
+#Get current Year 
+current_year = date.today().year
+age  = lambda birth_year : current_year - birth_year 
+print(age(1994),'years')
+# Written in 2020
+# >> 26 years
+
+#Example 3
+#BMI returns an anonymous function that calculates the Body Mass Index
+def BMI():
+  return lambda height,weight : round(weight / (height * height), 2)
+
+height = 1.75 # Height in meters
+weight = 80 #Weight in kilograms
+
+print("Your Body Mass Index:",BMI()(height,weight))
+# >> Your Body Mass Index: 26.12
+
+#Example 
+fruits_basket = {'🍉':True,'🍇':False,'🍎':True,'🍌':True}
+#Check for existing fruits in basket.
+def existing_fruits(fruits,callback):
+    for fruit,exists in fruits.items():
+        if(callback(exists)):
+            print(fruit,end=' ')
+
+existing_fruits(fruits_basket,lambda itm:itm)
+
+#Note: Lambda functions are mostly used as callbacks as an argument to a higher-order function (a function that takes in other functions as arguments). such as built-in map() or filter()
 ```
+![Python Lambda Functions](https://user-images.githubusercontent.com/20127375/81593672-b436a600-93b7-11ea-933e-efff6ee2f51c.png)
 
 ### Python Dictionary Comprehension
 [:arrow_up: TOP :arrow_up:](#table-of-contents) :link:
 > Dictionary comprehension is an elegant and concise way to create dictionaries.
+#### Syntax
+```python
+lambda arguments : expression
+```
 #### Examples (❛ ᴗ❛)
 ```python
 #Example 1
